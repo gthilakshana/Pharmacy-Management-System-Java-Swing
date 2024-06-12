@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="company" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b570a84b-576f-4a48-a54e-ec5b40b54ed4">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="-10" width="340" height="31" uuid="aa44f372-e7da-4081-8497-64d2ea46a68b"/>
+				<textElement textAlignment="Center">
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[New Pharmarcy PVT Ltd.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="21" width="400" height="21" uuid="a4b3e105-855a-447a-8a07-f1aa0097b8f6"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Clock Tower, Polonnaruwa Road Near, Polonnaruwa,Sri lanka]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="60" width="150" height="20" uuid="56f10fd6-e8ab-4122-86fb-7d6737b7fd99"/>
+				<box>
+					<pen lineWidth="2.25" lineStyle="Double"/>
+					<topPen lineWidth="2.25" lineStyle="Double" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="2.25" lineStyle="Double" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Company Registration]]></text>
+			</staticText>
+			<image>
+				<reportElement x="20" y="-1" width="60" height="61" uuid="3e1f432f-65b0-4da8-862d-f8b6d0092630"/>
+				<imageExpression><![CDATA["C:/Users/Thamara/Downloads/pharmacy.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="330" y="10" width="70" height="21" uuid="b7d6d90b-9a03-4e9d-8242-a04162416de2"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Date/Time]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="420" y="11" width="70" height="20" uuid="aa8b5b5c-2148-4b12-894f-6ba63aa5d773"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="494" y="10" width="51" height="20" uuid="bdfe4a9f-ce51-4488-89c3-67c4d8f10298"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="18" width="50" height="22" uuid="73b9286e-1487-4a63-85ad-932f7b2f0b1c"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="18" width="91" height="21" uuid="51607736-70b3-41f8-9bb1-e04d522a6788"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Company]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="20" width="141" height="21" uuid="9b57b498-1cb3-4baf-b0f2-f718dc867270"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Contact Number]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="10" width="551" height="1" uuid="2a48f3c1-49c9-4f05-85df-d861c60fac49"/>
+			</line>
+			<line>
+				<reportElement x="2" y="50" width="551" height="1" uuid="8c5fbaad-0bec-42c9-9bba-d9a71398f496"/>
+			</line>
+			<line>
+				<reportElement x="120" y="11" width="1" height="41" uuid="586808b7-b714-403f-8e8a-75a46892572e"/>
+			</line>
+			<line>
+				<reportElement x="329" y="10" width="1" height="41" uuid="64651eef-91d6-49f4-994f-7fe7726aaef3"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="10" width="120" height="30" uuid="48ad3e00-fd00-4d0d-8ce0-8ed2e54429d8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96553ba8-39c3-4bc4-b478-18172e5adb85"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="10" width="209" height="30" uuid="bf9259f8-93d8-49ef-ad29-5e9f91381a6f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5f04a54c-3973-412b-8780-8a0dbda7c248"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="10" width="222" height="30" uuid="d6d33cf4-1820-45a2-8ba3-f256b6ff522f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f2719469-d3ba-40fa-89e8-8d557b476998"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="70" y="12" width="430" height="21" uuid="c634430b-bd40-41b5-b9b3-f5b6b8179897"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SOFTEARE BY Thamara SOLUTIONS (PVT) LTD, SRI LANKA TEL : 011-2456894 ]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

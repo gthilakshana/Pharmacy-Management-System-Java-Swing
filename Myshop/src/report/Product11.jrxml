@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Product11" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7da171d2-32d4-4cde-9e5e-a0d0449c4ea0">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="114" splitType="Stretch">
+			<staticText>
+				<reportElement x="100" y="2" width="377" height="38" uuid="f10ea77d-81ac-4884-95b9-011d2a8bf0b2"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Healthguard Pharmacy Limited]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="2" width="77" height="80" uuid="53e6be6b-c4c4-47e2-89dd-d22a884ebf73"/>
+				<imageExpression><![CDATA["C:/Users/HP/Downloads/healthguard-pharmacy-limited (1).png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="130" y="40" width="300" height="70" uuid="b6144876-0455-4f25-8010-30b0f1cfd21f"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[
+Healthguard at Thalawathugoda,708/A, Madiwela Road, Thalawathugoda
+
+]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="0" width="595" height="30" backcolor="#F0F0F0" uuid="8883234e-12c6-48a6-a4b3-e89ce5505421"/>
+				<staticText>
+					<reportElement x="386" y="0" width="30" height="30" uuid="b2eae728-b081-400c-9290-37d3d6ba953a"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[Date :]]></text>
+				</staticText>
+				<textField pattern="MMMMM dd, yyyy">
+					<reportElement x="420" y="0" width="100" height="30" uuid="f184307c-d21d-46e8-9dd5-76ce29108780"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+				<textField pattern="HH:mm">
+					<reportElement x="520" y="0" width="66" height="30" uuid="daef2361-0a46-4bff-b21a-4f6c538f562f"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="5" width="140" height="30" backcolor="#FF91FD" uuid="e54dbb0b-00ab-44b4-9383-ee9422fbf779"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="140" y="5" width="140" height="30" backcolor="#FF91FD" uuid="93219f7f-3ccf-4449-a2cf-9ee61bf93312"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Product]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="280" y="5" width="140" height="30" backcolor="#FF91FD" uuid="db3904f0-b1cf-4c12-b75b-ffa5dc31ebdc"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Brand]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="5" width="140" height="30" backcolor="#FF91FD" uuid="22d734e7-aac7-4225-b982-fe72eb543ffa"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Category]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="140" height="30" uuid="26901f30-49fa-4bca-8473-6a9a762ea0c8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1b9c00f4-67ff-4454-a8c8-edbb49cda0e7"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="140" height="30" uuid="0de8630b-b7a6-447c-b289-b915522e1c90">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd733e94-aae2-4326-b366-49af98e7e94a"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="140" height="30" uuid="5810dea9-1558-4653-bf73-bec30dd07956">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c75096c-bfd2-41da-9e76-4806dbe5ec87"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="140" height="30" uuid="e2715745-35fb-4eac-a416-5dbf1b39cdc4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="64a29f14-80f9-4270-ad32-35e99bce1110"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_4}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="28" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="0" width="594" height="20" backcolor="#FF91FD" uuid="4d488e77-8f07-476a-b6fd-75546ce1bc33"/>
+				<staticText>
+					<reportElement x="210" y="1" width="383" height="20" uuid="50a5e029-c074-4fa6-ac9f-38e95f8be606"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[SOFTEARE BY Thilakshana SOLUTIONS (PVT) LTD, SRI LANKA TEL : 011-3456782 ]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</pageFooter>
+</jasperReport>
