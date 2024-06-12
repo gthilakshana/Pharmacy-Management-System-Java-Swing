@@ -1,7 +1,5 @@
 # Pharmacy-Management-System-JavaFX
 
-Phamacy Management System (Desktop-based application)
-
 > [!NOTE]
 >This is my first year JAVA Desktop Project. I have developed a Phamacy Management system using JavaFX and MySQL. It includes features such as admin signing, product listing, item calculation, GRN (Goods Received Note).
 
